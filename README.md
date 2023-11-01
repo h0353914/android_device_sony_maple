@@ -16,11 +16,11 @@ How to build LineageOS
 
 * Initialize the repo:
 
-        repo init -u git://github.com/LineageOS/android.git -b lineage-20.0
+        repo init -u git://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 
 * Create a local manifest:
 
-        vim .repo/local_manifests/roomservice.xml
+        mkdir .repo/local_manifests && nano .repo/local_manifests/roomservice.xml
 
         <?xml version="1.0" encoding="UTF-8"?>
         <manifest>
@@ -45,4 +45,4 @@ How to build LineageOS
 
 * Build LineageOS
 
-        make -j8 bacon
+        m bacon
