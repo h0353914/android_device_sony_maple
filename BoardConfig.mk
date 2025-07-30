@@ -26,7 +26,7 @@ TARGET_BOOTLOADER_BOARD_NAME := G8141
 
 ### KERNEL
 BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
 
 ### PARTITIONS
 # See also /proc/partitions on the device
