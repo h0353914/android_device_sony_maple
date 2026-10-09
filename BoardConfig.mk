@@ -24,6 +24,11 @@ PRODUCT_PLATFORM := msm8998
 ### BOOTLOADER
 TARGET_BOOTLOADER_BOARD_NAME := G8141
 
+### ORANGEFOX
+# Plain make variables for the lunched device, the shared ones are in yoshino-common/vendorsetup.sh
+FOX_VARIANT := XZP
+FOX_TARGET_DEVICES := maple,maple_dsds,G8141,G8142,SO-04J
+
 ### KERNEL
 BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
